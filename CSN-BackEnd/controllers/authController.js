@@ -43,7 +43,7 @@ exports.loginAdmin = async (req, res) => {
     if (!admin) {
       return res.status(400).json({ msg: 'Invalid email' });
     }
-    const isMatch = await compare(password, admin.password);
+    const isMatch = await bcrypt.compare(password, admin.password);
     if (!isMatch) {
       return res.status(400).json({ msg: 'Invalid password' });
     }
