@@ -38,6 +38,28 @@ const volunteerSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  availabilityDates: [{
+    date: {
+      type: Date,
+      required: true,
+    },
+    isAvailable: {
+      type: Boolean,
+      default: true,
+    },
+  }],
+  profilePicture: {
+    type: String,
+    required: false,
+  },
+  isActive: {
+    type: Boolean,
+    default: true,
+  },
+  lastLogin: {
+    type: Date,
+    default: Date.now,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

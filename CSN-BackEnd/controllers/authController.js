@@ -34,8 +34,8 @@ exports.registerVolunteer = async (req, res) => {
     res.status(500).send('Server error');
   }
 };
-//admin login
 
+//admin login
 exports.loginAdmin = async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -61,7 +61,6 @@ exports.loginAdmin = async (req, res) => {
     res.status(500).send('Server error');
   }
 };
-
 
 // Login User
 exports.loginVolunteer = async (req, res) => {

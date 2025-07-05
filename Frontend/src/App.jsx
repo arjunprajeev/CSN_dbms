@@ -12,6 +12,7 @@ import OrganisationLogin from './Pages/OrganisationLogin';
 import OrganisationPage from './Pages/OrganisationPage';
 import OrganisationRegister from './Pages/OrganisationRegister';
 import UsersPageLo from './Pages/UsersPageLo';
+
 const App = () => {
   return (
     <Router>
@@ -29,7 +30,6 @@ const App = () => {
         <Route path="/organisation-login" element={<OrganisationLogin/>}/>
         <Route path="/organisation-page" element={<OrganisationPage/>}/>
         <Route path="/organisation-register" element={<OrganisationRegister/>} />
-        
       </Routes>
     </Router>
   );
