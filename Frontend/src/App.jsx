@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home'; // Adjust the import paths accordingly
+import Home from './Home';
 import VolunteerLogin from './Pages/VolunteerLogin';
 import VolunteerRegister from './Pages/VolunteerRegister';
 import VolunteerPage from './Pages/VolunteerPage';
